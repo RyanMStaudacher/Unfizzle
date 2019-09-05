@@ -242,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chunkPrefab: {fileID: 1300506641397831947, guid: 2ef88619f7a014947b7a3b71cfcc6035,
     type: 3}
+  worldName: world
 --- !u!4 &917867105
 Transform:
   m_ObjectHideFlags: 0
@@ -268,6 +269,7 @@ GameObject:
   - component: {fileID: 1084117554}
   - component: {fileID: 1084117553}
   - component: {fileID: 1084117556}
+  - component: {fileID: 1084117557}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -352,3 +354,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4521663299524d84598bd6647f345c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1084117557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084117552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7614a3d05c160f419e781c18bfe49a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  world: {fileID: 917867104}

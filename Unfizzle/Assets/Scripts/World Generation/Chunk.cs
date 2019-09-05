@@ -9,7 +9,8 @@ public class Chunk : MonoBehaviour
 {
     public Block[,,] blocks = new Block[chunkSize, chunkSize, chunkSize];
     public static int chunkSize = 16;
-    public bool update = true;
+    public bool update = false;
+    public bool rendered;
     public World world;
     public WorldPos pos;
 
@@ -52,6 +53,7 @@ public class Chunk : MonoBehaviour
     void UpdateChunk()
     {
         MeshData meshData = new MeshData();
+        rendered = true;
 
         for (int x = 0; x < chunkSize; x++)
         {
